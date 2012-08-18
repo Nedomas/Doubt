@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @quote.date %>
+</p>
+
+<p>
+  <b>Open:</b>
+  <%= @quote.open %>
+</p>
+
+<p>
+  <b>High:</b>
+  <%= @quote.high %>
+</p>
+
+<p>
+  <b>Low:</b>
+  <%= @quote.low %>
+</p>
+
+<p>
+  <b>Close:</b>
+  <%= @quote.close %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%= @quote.volume %>
+</p>
+
+<p>
+  <b>Adjclose:</b>
+  <%= @quote.adjClose %>
+</p>
+
+<p>
+  <b>Stock:</b>
+  <%= @quote.stock_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>
