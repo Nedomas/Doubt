@@ -22,6 +22,7 @@
 			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/mindaugas/workspace/Doubt/lib/java.jdbc-0.2.3.jar"/>
 	<classpathentry kind="con" path="ccw.LEININGEN_CONTAINER"/>
 	<classpathentry kind="lib" path="classes"/>
 	<classpathentry kind="output" path="bin"/>
