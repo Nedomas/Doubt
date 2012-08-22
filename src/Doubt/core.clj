@@ -1,8 +1,10 @@
 (ns Doubt.core)
 ;(use 'clojure.java.jdbc)
 (require '[clojure.java.jdbc :as sql])
-(println (System/getenv "DATABASE_URL"))
-(sql/with-connection (System/getenv "DATABASE_URL")
+(def db {:classname "org.postgresql.Driver"
+         :subprotocol "postgresql"
+         :subname "postgres://localhost:5432/template1" :user "mindaugas" :password "aoeu"})
+(sql/with-connection db
               (sql/create-table :testing [:data :text]))
 (defn -main
   "I don't do a whole lot."
